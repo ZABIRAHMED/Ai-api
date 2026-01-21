@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book to Music App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📖 Book Mood Music</h1>
+        <div id="ocr-section" class="section">
+            <h2>Extract Text</h2>
+            <div class="input-group">
+                <input type="file" id="imageUpload" accept="image/*">
+                <button id="extractBtn">Extract Text</button>
+            </div>
+            <div class="output-box">
+                <h3>Extracted Text:</h3>
+                <p id="result">No text extracted yet...</p>
+            </div>
+        </div>
+
+        <div id="sentiment-section" class="section">
+            <h2>Step 2: Analyze Mood</h2>
+            <div class="input-group">
+                <button id="analyzeBtn">Analyze Mood</button>
+            </div>
+            <div class="output-box">
+                <h3>Detected Mood:</h3>
+                <p id="mood">No mood detected yet...</p>
+            </div>
+        </div>
+
+        <div id="music-section" class="section">
+            <h2>Step 3: Get Music</h2>
+            <div class="input-group">
+                <button id="musicBtn" disabled>Get Recommendations</button>
+            </div>
+            <div class="output-box">
+                <h3>Recommended Songs:</h3>
+                <p id="songs">Coming soon...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/ocr.js"></script>
+    <script src="/js/sentiment.js"></script>
+</body>
+</html>
