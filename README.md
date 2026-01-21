@@ -28,13 +28,6 @@ book-mood-music/
 ├── app.js
 └── README.md
 ```
-
-## Status
-
-- [x] Text Extraction (OCR)
-- [ ] Sentiment Analysis
-- [ ] Music Recommendation
-
 ## Author
 
 ZABIRAHMED
