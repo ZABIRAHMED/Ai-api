@@ -11,7 +11,6 @@ router.post('/analyze', async function(req, res) {
     }
     
     try {
-        // Call Hugging Face API (token is hidden in .env!)
         const response = await fetch('https://api-inference.huggingface.co/models/cardiffnlp/twitter-roberta-base-emotion-multilingual-latest', {
             method:  'POST',
             headers:  {
